@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient from purple to blue */
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: #097969;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+button {
+    width: calc(20% - 20px); /* Adjust width for button and input */
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient for input and button */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 60%;
+    margin-right: 10px;
+    display: inline-block; /* Keep the layout for the text input */
+}
+
+input[type="datetime-local"] {
+    width: 30%;
+    display: inline-block; /* Keep the layout for the datetime input */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    background: linear-gradient(to right, #84fab0, #8fd3f4); /* Gradient for task items */
+    border-radius: 5px;
+    margin: 5px 0; /* Space between items */
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.reminder {
+    font-size: 0.9em;
+    color: red;
+}
